@@ -1,35 +1,10 @@
-13:17:56 **** Build of configuration Debug for project Base_FreeRTOS ****
+15:54:09 **** Incremental Build of configuration Debug for project Base_FreeRTOS ****
 make -j4 all 
-arm-none-eabi-gcc "../ThirdParty/FreeRTOS/portable/MemMang/heap_4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -I"/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/include" -I"/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"ThirdParty/FreeRTOS/portable/MemMang/heap_4.d" -MT"ThirdParty/FreeRTOS/portable/MemMang/heap_4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ThirdParty/FreeRTOS/portable/MemMang/heap_4.o"
-arm-none-eabi-gcc "../ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -I"/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/include" -I"/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.d" -MT"ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.o"
-arm-none-eabi-gcc "../ThirdParty/FreeRTOS/croutine.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -I"/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/include" -I"/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"ThirdParty/FreeRTOS/croutine.d" -MT"ThirdParty/FreeRTOS/croutine.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ThirdParty/FreeRTOS/croutine.o"
-arm-none-eabi-gcc "../ThirdParty/FreeRTOS/event_groups.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -I"/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/include" -I"/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"ThirdParty/FreeRTOS/event_groups.d" -MT"ThirdParty/FreeRTOS/event_groups.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ThirdParty/FreeRTOS/event_groups.o"
-In file included from ../ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.c:32:
-/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/include/FreeRTOS.h:57:10: fatal error: FreeRTOSConfig.h: No such file or directory
-   57 | #include "FreeRTOSConfig.h"
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/subdir.mk:19: ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.o] Error 1
-make: *** Waiting for unfinished jobs....
-In file included from ../ThirdParty/FreeRTOS/croutine.c:27:
-/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/include/FreeRTOS.h:57:10: fatal error: FreeRTOSConfig.h: No such file or directory
-   57 | #include "FreeRTOSConfig.h"
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [ThirdParty/FreeRTOS/subdir.mk:37: ThirdParty/FreeRTOS/croutine.o] Error 1
-In file included from ../ThirdParty/FreeRTOS/portable/MemMang/heap_4.c:42:
-/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/include/FreeRTOS.h:57:10: fatal error: FreeRTOSConfig.h: No such file or directory
-   57 | #include "FreeRTOSConfig.h"
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [ThirdParty/FreeRTOS/portable/MemMang/subdir.mk:19: ThirdParty/FreeRTOS/portable/MemMang/heap_4.o] Error 1
-In file included from ../ThirdParty/FreeRTOS/event_groups.c:36:
-/home/ingfisica/STM32CubeIDE/Robotics/RTOS_workspace/Base_FreeRTOS/ThirdParty/FreeRTOS/include/FreeRTOS.h:57:10: fatal error: FreeRTOSConfig.h: No such file or directory
-   57 | #include "FreeRTOSConfig.h"
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [ThirdParty/FreeRTOS/subdir.mk:37: ThirdParty/FreeRTOS/event_groups.o] Error 1
-"make -j4 all" terminated with exit code 2. Build might be incomplete.
+arm-none-eabi-size   Base_FreeRTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7868	     12	   7468	  15348	   3bf4	Base_FreeRTOS.elf
+Finished building: default.size.stdout
+ 
 
-13:17:57 Build Failed. 9 errors, 0 warnings. (took 1s.270ms)
+15:54:10 Build Finished. 0 errors, 0 warnings. (took 1s.194ms)
 
